@@ -7,8 +7,8 @@
 #All inputs will be integers. Please return an integer. Round down.
 
 def duty_free(price, discount, holiday_cost):
-    price_off = price * discount
+    price_off = price * discount / 100
     final = holiday_cost / price_off
-    return final
+    return int(final)
 
 duty_free(10,1,500)
